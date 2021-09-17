@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <img src="./images/logo.svg" alt="" class="logo" />
+    <div class="container">
+      <div class="row">
+        <div class="col col-left">
+          <label class="mb10">
+            <img src="./images/icon-dollar.svg" alt="" class="input-icon" />
+            Bill
+          </label>
+          <input type="number" placeholder="0" class="bill" />
+          <label class="mt40 mb10">Select Tip %</label>
+          <div class="tips-container">
+            <label for="t5" class="tips">
+              <input type="radio" name="tips" id="t5" value="0.05" />
+              <span class="checkmark"></span>
+              <div class="disVal">5%</div>
+            </label>
+            <label for="t10" class="tips">
+              <input type="radio" name="tips" id="t10" value="0.1" />
+              <span class="checkmark"></span>
+              <div class="disVal">10%</div>
+            </label>
+            <label for="t15" class="tips">
+              <input type="radio" name="tips" id="t15" value="0.15" />
+              <span class="checkmark"></span>
+              <div class="disVal">15%</div>
+            </label>
+            <label for="t20" class="tips">
+              <input type="radio" name="tips" id="t20" value="0.2" />
+              <span class="checkmark"></span>
+              <div class="disVal">20%</div>
+            </label>
+            <label for="t50" class="tips">
+              <input type="radio" name="tips" id="t50" value="0.5" />
+              <span class="checkmark"></span>
+              <div class="disVal">50%</div>
+            </label>
+            <input
+              type="number"
+              name="tips"
+              id="tC"
+              min="1"
+              max="80"
+              placeholder="Custom"
+            />
+          </div>
+          <label class="mt40 mb10">
+            <img src="./images/icon-person.svg" alt="" class="input-icon" />
+            <p class="error-message hidden">Can't be zero</p>
+            Number of People</label
+          >
+          <input type="number" placeholder="0" class="guess" id="guess" />
+        </div>
+        <div class="col col-right">
+          <div class="row">
+            <div class="">
+              <h3>Tip Amount</h3>
+              <p>/ person</p>
+            </div>
+            <h2 id="tip">$0.00</h2>
+          </div>
+          <div class="row">
+            <div class="">
+              <h3>Total</h3>
+              <p>/ person</p>
+            </div>
+            <h2 id="total">$0.00</h2>
+          </div>
+          <button class="rs-btn">Reset</button>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.github.com/khoinpb96" target="_blank">khoinpb96</a>.
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
